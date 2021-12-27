@@ -14,8 +14,8 @@ const person = {
 
 console.log(person);
 
-function chooseColor(color: "Red" | "Green" | "Yellow") {
+function chooseTheColor(color: "Red" | "Green" | "Yellow") {
     return color;
 }
 
-console.log(chooseColor("Red"));
+console.log(chooseTheColor("Red"));
