@@ -1,0 +1,79 @@
+:root {
+    --dark-color: #111;
+    --light-color: #f3f3f3;
+    --medium-color: #bbb;
+    --border-color: #ddd;
+    --main-color: #0074d9;
+    --main-gradient: linear-gradient(
+        43deg,
+        #4158d0 0%,
+        #c850c0 46%,
+        #ffcc70 100%
+    );
+    --error-color: #ff4136;
+    --border-radius: 4px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: var(--main-gradient);
+    height: 100vh;
+    font-family: sans-serif;
+    color: var(--dark-color);
+}
+
+.container {
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    max-width: 1000px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+}
+
+h2 {
+    padding: 10px 0 30px;
+    text-align: center;
+}
+
+button {
+    margin: auto auto;
+    border: none;
+    background: var(--main-color);
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--light-color);
+    border-radius: var(--border-radius);
+    transition: 0.2s all;
+    opacity: 0.5;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+.video-container {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.video {
+    max-width: 100%;
+    max-height: 500px;
+    display: flex;
+}
+
+.controls {
+    position: absolute;
+    bottom: 10px;
+}
