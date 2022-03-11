@@ -14,5 +14,5 @@ export function sum<T>(...args: T[]): number {
 }
 
 console.log(sum(2, 2, 2, 2));
-console.log(sum(...[2, 2, "2", "2"]));
+console.log(sum(...[2, 2, "2", "2"])); // this is read as one by TS
 console.log(sum("2", "2", "2", "2"));
