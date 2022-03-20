@@ -1,9 +1,12 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 function decorator(classPrototype: any, methodName: string | symbol): any {
-    let propertyValue: any;
+    let propertyValue: string | number;
+    console.log(classPrototype);
+    console.log(methodName);
 
     return {
         get: () => propertyValue,
-        set: (value: any) => {
+        set: (value: string | number) => {
             if (typeof value === "string") {
                 propertyValue = value.split("").reverse().join("");
                 return;
